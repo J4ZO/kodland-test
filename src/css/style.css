@@ -4,9 +4,10 @@ body
     padding: 0px;
 }
 
-.intro-area {
-    background-image: url('/images/background.png');
-    background-size: cover;
+.intro-area
+{
+    height: auto;
+    background-color: #ffbf69;
 }
 
 .header
@@ -22,12 +23,47 @@ body
     justify-content: space-around;
     gap: 1.5rem;
     padding: 0px;
-    list-style-type: none;
+    list-style: none;
 }
 
-.header__item > a
+.header__link
 {
     color: black;
     text-decoration: none;
 }
+
+
+
+.hero__content
+{
+    width: 800px;
+    margin: 0px 50px;
+}
+
+.hero__title
+{
+    margin: 0;
+    font-size: 9rem;
+    color: white;
+}
+
+.hero__text
+{
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+.about
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+
+
 
