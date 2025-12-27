@@ -1,0 +1,33 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.intro-area {
+    background-image: url('/images/background.png');
+    background-size: cover;
+}
+
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.header__menu
+{
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.header__item > a
+{
+    color: black;
+    text-decoration: none;
+}
+
