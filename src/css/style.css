@@ -32,12 +32,17 @@ body
     text-decoration: none;
 }
 
-
+.hero
+{
+    padding: 50px;
+}
 
 .hero__content
 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 800px;
-    margin: 0px 50px;
 }
 
 .hero__title
@@ -54,6 +59,16 @@ body
     color: white;
 }
 
+.hero__button
+{
+    font-size: 1.2rem;
+    background-color: #caf2f1;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    cursor: pointer; 
+}
+
 
 .about
 {
@@ -62,6 +77,113 @@ body
     align-items: center;
     flex-direction: column;
     margin: 50px 0;
+}
+
+.products
+{
+    background-color: #caf2f1;
+    padding: 50px 0px;
+}
+
+.products__title
+{
+    text-align: center;
+}
+
+.products__list
+{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 20px;
+}
+
+.products__container
+{
+    width: 200px;
+}
+
+.products_item
+{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr auto auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.products_item img
+{
+    width: 100%;
+}
+
+.products__button
+{
+    background-color: #febf68;
+    border: none;
+    padding: 10px 20px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.rules
+{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    justify-items: end;
+    padding: 0px 50px;
+    height: 600px;
+
+    background-image: url(/images/bg-grid.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.rules__info
+{
+    width: 700px;
+}
+
+.rules__image
+{
+    width: 400px;
+}
+
+.rules__image img
+{
+    width: 100%;
+}
+
+.footer
+{
+    background-color: #323332;
+}
+
+.footer__title
+{
+    color: white;
+    width: auto;
+}
+
+.footer__list
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    list-style: none;
+}
+
+
+.footer__link
+{
+    color: white;
+    text-decoration: none;
 }
 
 
