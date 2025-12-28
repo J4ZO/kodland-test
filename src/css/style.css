@@ -55,7 +55,7 @@ body
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 800px;
+    max-width: 800px;
 }
 
 .hero__title
@@ -157,6 +157,7 @@ body
     justify-items: end;
     padding: 0px 50px;
     height: 600px;
+    gap: 20px;
 
     background-image: url(/images/bg-grid.png);
     background-size: contain;
@@ -167,7 +168,7 @@ body
 
 .rules__info
 {
-    width: 700px;
+    max-width: 700px;
 }
 
 .rules__image
