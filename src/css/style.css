@@ -8,6 +8,10 @@ body
 .intro-area
 {
     height: auto;
+    background-image: url(/images/background.png);
+    background-position: 70% 0px;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-color: #ffbf69;
 }
 
@@ -43,7 +47,7 @@ body
 
 .hero
 {
-    padding: 50px;
+    padding: 50px; 
 }
 
 .hero__content
