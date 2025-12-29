@@ -50,6 +50,7 @@ document.getElementById("header__name").addEventListener('click' , function()
 {
     console.log("click pop")
     intro.classList.toggle('background');
+     menu.classList.toggle('header__menu--background--responsive');
 });
 
 let rules = document.getElementById("rules");

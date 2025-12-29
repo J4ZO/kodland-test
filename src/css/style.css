@@ -355,9 +355,10 @@ body
         background-color: #ffb145;
     }
 
-    .header__menu---background--responsive
+    .header__menu--background--responsive
     {
-        background-color: #fc2e20;
+        background-color: #ff685e;
+        border: #ff685e;
     }
 
     .hero__title
