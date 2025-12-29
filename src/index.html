@@ -12,15 +12,20 @@
 </head>
 <body>
 
-    <div class="intro-area">
+    <div class="intro-area" id="intro-area">
         <header class="header container">
-            <p class="header__name">POP IT</p>
+            <p class="header__name" id="header__name">POP IT</p>
             <nav class="header__nav">
-                <ul class="header__menu">
-                    <li class="header__item"><a href="" class="header__link" >Nosotros</a></li>
+                <svg class="burger" id="burger" xmlns="http://www.w3.org/2000/svg" width="24" height="24"    
+fill="#000000" viewBox="0 0 24 24" >
+<path d="M3 5H21V7H3z"></path><path d="M3 11H21V13H3z"></path><path d="M3 17H21V19H3z"></path>
+</svg>
+                <ul class="header__menu" id="header__menu">
+                    <li class="header__item"><a href="" class="header__link">Nosotros</a></li>
                     <li class="header__item"><a href="" class="header__link">Rebajas</a></li>
                     <li class="header__item"><a href="" class="header__link">Contacto</a></li>
                 </ul>
+                
             </nav>
         </header>
 
@@ -28,7 +33,7 @@
             <div class="hero__content">
                 <h1 class="hero__title">POP IT!</h1>
                 <p class="hero__text">¡El mejor juguete anti-estrés: Papel de burbujas infinito!</p>
-                <button class="hero__button sound-button">COMPRAR</button>
+                <a href="#products"><button class="hero__button sound-button">COMPRAR</button></a>
             </div>
         </section>
     </div>
@@ -43,7 +48,7 @@
             decenas de burbujas de silicona simplemente se empujan hacia el otro lado.
         </section>
 
-        <section class="products">
+        <section class="products" id="products">
             <h2 class="products__title">¡Elige tu Pop-It!</h2>
 
             <ul class="products__list">
@@ -74,7 +79,7 @@
             </ul>
         </section>
 
-        <section class="rules">
+        <section class="rules" id="rules">
             <div class="rules__info">
                 <h2>Reglas del Juego</h2>
                 <p class="p--size">Los jugadores se turnan para presionar las burbujas.
@@ -92,11 +97,10 @@
 
     <footer class="footer">
         <ul class="footer__list">
-            <li class="footer__item"><h1 class="footer__title">POP IT</h1></li>
-            <li class="footer__item"><a href="" class="footer__link">Métodos de pago</a></li>
+            <li class="footer__item"><h1 class="footer__title" id="footer__title">POP IT</h1></li>
             <li class="footer__item"><a href="" class="footer__link">Envío</a></li>
             <li class="footer__item"><a href="" class="footer__link">Acerca de</a></li>
-            <li class="footer__item"><a href="" class="footer__link">Contactos</a></li>
+            <li class="footer__item"><a href="" class="footer__link">Contacto</a></li>
         </ul>      
     </footer>
     <script src="./js/index.js"></script>

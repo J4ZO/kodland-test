@@ -30,6 +30,10 @@ sr.reveal('.products__list',{
         duration: 2000
     });
 
+sr.reveal('.rules',{
+        duration: 2000
+    });
+
 sr.reveal('.footer',{
         duration: 2000
     });
@@ -37,8 +41,41 @@ sr.reveal('.footer',{
 
 document.querySelectorAll('.sound-button').forEach(button => {
     button.addEventListener('click', function() {
-        console.log("play sound");
         document.getElementById('audio-pop').play();
     });
 });
+
+let intro = document.getElementById("intro-area");
+document.getElementById("header__name").addEventListener('click' , function()
+{
+    console.log("click pop")
+    intro.classList.toggle('background');
+});
+
+let rules = document.getElementById("rules");
+document.getElementById("footer__title").addEventListener('click' , function()
+{
+    console.log("click pop")
+    rules.classList.toggle('background2');
+});
+
+let menu = document.getElementById('header__menu');
+let burger = document.getElementById('burger');
+burger.addEventListener('click', () =>
+{
+    burger.classList.add('burger--hidden');
+    menu.classList.add('header__menu--responsive');
+});
+
+menu.addEventListener('click', (e) => {
+    e.stopPropagation();
+});
+
+document.addEventListener('click', (e) => {
+    if (!menu.contains(e.target) && !burger.contains(e.target)) {
+        burger.classList.remove('burger--hidden');
+        menu.classList.remove('header__menu--responsive');
+    }
+});
+
 
