@@ -13,7 +13,7 @@ body
 .intro-area
 {
     height: auto;
-    background-image: url(/assets/images/background.png);
+    background-image: url(../../assets/images/background.png);
     background-position: 70% 0px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@ body
 
 .background
 {
-    background-image: url(/assets/images/background2.png);
+    background-image: url(../../assets/images/background2.png);
     background-color: #fc2e20;
 }
 
@@ -201,7 +201,7 @@ body
     height: 600px;
     gap: 20px;
 
-    background-image: url(/assets/images/bg-grid.png);
+    background-image: url(../..//assets/images/bg-grid.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -211,7 +211,7 @@ body
 
 .background2
 {
-    background-image: url(/assets/images/bg-grid2.png);
+    background-image: url(../../assets/images/bg-grid2.png);
 }
 
 
