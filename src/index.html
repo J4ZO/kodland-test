@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal@4"></script>
 </head>
 <body>
 
@@ -27,7 +28,7 @@
             <div class="hero__content">
                 <h1 class="hero__title">POP IT!</h1>
                 <p class="hero__text">¡El mejor juguete anti-estrés: Papel de burbujas infinito!</p>
-                <button class="hero__button">COMPRAR</button>
+                <button class="hero__button sound-button">COMPRAR</button>
             </div>
         </section>
     </div>
@@ -48,25 +49,26 @@
             <ul class="products__list">
                 <li class="products__container">
                     <article class="products_item">
-                        <img src="../images/square.png" alt="">
+                        <img src="../assets/images/square.png" alt="">
                         <h3>Colorido cuadrado</h3>
-                        <button class="products__button">COMPRAR</button>
+                        <button class="products__button sound-button">COMPRAR</button>
+                        <audio id="audio-pop" preload="auto" src="/assets/sound/pop-423717.mp3"></audio>
                     </article>
                 </li>
 
                 <li class="products__container">
                     <article class="products_item">
-                        <img src="../images/amongus.png" alt="">
+                        <img src="../assets/images/amongus.png" alt="">
                         <h3>Among Us</h3>
-                        <button class="products__button">COMPRAR</button>
+                        <button class="products__button sound-button">COMPRAR</button>
                     </article>
                 </li>
 
                 <li class="products__container">
                     <article class="products_item">
-                        <img src="../images/round.png" alt="">
+                        <img src="../assets/images/round.png" alt="">
                         <h3>Redondo multicolor</h3>
-                        <button class="products__button">COMPRAR</button>
+                        <button class="products__button sound-button">COMPRAR</button>
                     </article>
                 </li>
             </ul>
@@ -83,7 +85,7 @@
             </div>
 
             <div class="rules__image">
-                <img src="../images/photo.jpg" alt="">
+                <img src="../assets/images/photo.jpg" alt="">
             </div>
         </section>
     </main>
@@ -97,5 +99,6 @@
             <li class="footer__item"><a href="" class="footer__link">Contactos</a></li>
         </ul>      
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 </html>

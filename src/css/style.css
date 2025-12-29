@@ -8,11 +8,13 @@ body
 .intro-area
 {
     height: auto;
-    background-image: url(/images/background.png);
+    background-image: url(/assets/images/background.png);
     background-position: 70% 0px;
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #ffbf69;
+
+    transition: all 0.2s ease-in-out;
 }
 
 .header
@@ -35,6 +37,8 @@ body
 {
     font-size: 1.1rem;
     font-weight: 500;
+
+    cursor: pointer;
 }
 
 .header__link
@@ -48,6 +52,8 @@ body
 .hero
 {
     padding: 50px; 
+
+    
 }
 
 .hero__content
@@ -81,6 +87,14 @@ body
     padding: 10px 30px;
     margin-top: 30px;
     cursor: pointer; 
+
+    transition: all 0.2s ease-in-out;
+}
+
+.hero__button:hover
+{
+    background-color: #7ae0de;
+    border-radius: 20px;
 }
 
 
@@ -91,6 +105,7 @@ body
     align-items: center;
     flex-direction: column;
     margin: 50px 0;
+
 }
 
 .about__text
@@ -104,6 +119,8 @@ body
 {
     background-color: #caf2f1;
     padding: 50px 0px;
+
+    
 }
 
 .products__title
@@ -146,6 +163,14 @@ body
 
     font-weight: bold;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.products__button:hover
+{
+    background-color: #ffb145;
+    /* box-shadow: 5px 5px 20px #febf68,
+             -5px -5px 20px #caf2f1; */
 }
 
 
@@ -159,11 +184,10 @@ body
     height: 600px;
     gap: 20px;
 
-    background-image: url(/images/bg-grid.png);
+    background-image: url(/assets/images/bg-grid.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    
 }
 
 .rules__info
@@ -213,6 +237,9 @@ body
 }
 
 
-
+@keyframes zoom-in {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
 
 
