@@ -1,14 +1,18 @@
+/* Smooth scroll when button is pressed */
 html
 {
     scroll-behavior: smooth;
 }
 
+/* Font style */
 body
 {
     font-family: "Montserrat", sans-serif;
     margin: 0px;
     padding: 0px;
 }
+
+/* intro area styles */
 
 .intro-area
 {
@@ -18,8 +22,40 @@ body
     background-size: contain;
     background-repeat: no-repeat;
     background-color: #ffbf69;
+    position: relative;
+    overflow: hidden;
+
 
     transition: all 0.2s ease-in-out;
+}
+
+.intro-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/images/background2.png);
+    background-position: 70% 0px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fc2e20;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    clip-path: circle(0px at 50% 50%);
+    z-index: 0;
+}
+
+.intro-area:hover::before {
+    opacity: 1;
+    clip-path: circle(150px at var(--mouse-x, 50%) var(--mouse-y, 50%));
+}
+
+.intro-area > * {
+    position: relative;
+    z-index: 1;
 }
 
 .background
@@ -27,6 +63,14 @@ body
     background-image: url(../../assets/images/background2.png);
     background-color: #fc2e20;
 }
+
+.background::before
+{
+    background-image: url(../../assets/images/background.png);
+    background-color: #ffbf69;
+}
+
+/* Header styles */
 
 .header
 {
@@ -67,6 +111,8 @@ body
 {
     display: none;
 }
+
+/* Hero section styles */
 .hero
 {
     padding: 50px; 
@@ -115,7 +161,7 @@ body
     border-radius: 20px;
 }
 
-
+/* about section styles */
 .about
 {
     display: flex;
@@ -132,6 +178,8 @@ body
     max-width: 800px;
     text-align: center;
 }
+
+/* Products section styles */
 
 .products
 {
@@ -190,6 +238,7 @@ body
     border-radius: 20px;
 }
 
+/* Rules section styles */
 
 .rules
 {
@@ -230,6 +279,8 @@ body
     width: 100%;
 }
 
+/* Footer styles */
+
 .footer
 {
     background-color: #323332;
@@ -266,7 +317,7 @@ body
     font-size: 1.1rem;
 }
 
-
+/* Animations */
 @keyframes zoom-in {
     from { opacity: 0; transform: scale(0.8); }
     to { opacity: 1; transform: scale(1); }
@@ -293,6 +344,7 @@ body
     }
 }
 
+/* Responsive design */
 @media screen and (max-width: 700px) {
     .rules
     {
